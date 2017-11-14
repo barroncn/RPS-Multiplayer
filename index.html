@@ -12,15 +12,16 @@
     
     <body>
         <h1>Rock, Paper, Scissors!</h1>
-        
+        <div>
+             <form>
+                <label>Name:</label>
+                <input type="text" name="Name" id="playerName" class="anInput"/>
+                <input type="submit" value="Start" id="start" class="aButton"/>
+            </form>
+        </div>
         <div id="mainGame" class="clearfix">
             <div id="playerOne">
-                <p id="oneName">Player One</p>
-                <p id="firstPlayer"></p>
-                <p class="choice">ROCK</p>
-                <p class="choice">PAPER</p>
-                <p class="choice">SCISSORS</p>
-                <p class="stats">Wins: <span id="winsOne">0</span> Losses: <span id="lossesOne">0</span> Ties: <span id="tiesOne">0</span></p>
+                <p>Waiting for Player One</p>
             </div>
             <div id="results">
                 <br>
@@ -28,12 +29,7 @@
                 <p id="winner"></p>
             </div>
             <div id="playerTwo">
-                <p id="twoName">Player Two</p>
-                <p id="secondPlayer"></p>
-                <p class="choice">ROCK</p>
-                <p class="choice">PAPER</p>
-                <p class="choice">SCISSORS</p>
-                <p class="stats">Wins: <span id="winsTwo">0</span> Losses: <span id="lossesTwo">0</span> Ties: <span id="tiesTwo">0</span></p>
+                <p>Waiting for Player Two</p>
             </div>
         </div>
         
@@ -42,8 +38,8 @@
                 <p>Chat Here:</p>
             </div>
             <form>
-                <input type="text" name="comment" id="comment"/>
-                <input type="submit" value="Say it!" id="submit"/>
+                <input type="text" name="comment" id="comment" class="anInput"/>
+                <input type="submit" value="Say it!" id="submit" class = "aButton"/>
             </form>
         </div>
         

@@ -70,6 +70,8 @@ h1{
 form{
     text-align: center;
     padding: 20px;
+    width: 458px;
+    margin: auto;
 }
 
 .clearfix::after {
@@ -78,15 +80,19 @@ form{
 	clear: both;
 }
 
-#submit{
+.aButton{
     background-color: white;
 }
 
-#submit:hover{
+.aButton:hover{
     background-color: #eee;
 }
 
-#comment:hover{
+.anInuput{
+    width: 350px;
+}
+
+.anInput:hover{
     border-color: #eee;
 }
 
