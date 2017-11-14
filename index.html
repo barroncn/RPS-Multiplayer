@@ -5,13 +5,100 @@
         <title>Rock Paper Scissors MultiPlayer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
         <script src="///code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     </head>
     
     <body>
+        <h1>Rock, Paper, Scissors!</h1>
         
+        <div id="mainGame" class="clearfix">
+            <div id="playerOne">
+                <p id="oneName">Player One</p>
+                <p id="firstPlayer"></p>
+                <p class="choice">ROCK</p>
+                <p class="choice">PAPER</p>
+                <p class="choice">SCISSORS</p>
+                <p class="stats">Wins: <span id="winsOne">0</span> Losses: <span id="lossesOne">0</span> Ties: <span id="tiesOne">0</span></p>
+            </div>
+            <div id="results">
+                <br>
+                <p>The Winner Is....</p>
+                <p id="winner"></p>
+            </div>
+            <div id="playerTwo">
+                <p id="twoName">Player Two</p>
+                <p id="secondPlayer"></p>
+                <p class="choice">ROCK</p>
+                <p class="choice">PAPER</p>
+                <p class="choice">SCISSORS</p>
+                <p class="stats">Wins: <span id="winsTwo">0</span> Losses: <span id="lossesTwo">0</span> Ties: <span id="tiesTwo">0</span></p>
+            </div>
+        </div>
         
+        <div id="chat">
+            <div id="conversation">
+                <p>Chat Here:</p>
+            </div>
+            <form>
+                <input type="text" name="comment" id="comment"/>
+                <input type="submit" value="Say it!" id="submit"/>
+            </form>
+        </div>
+        
+        <!--<div class="container">-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-xs-12">-->
+        <!--          <h1>Rock, Paper, Scissors!</h1> -->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="row">-->
+        <!--        <div class="col-sm-4 border border-secondary" id="playerOne">-->
+        <!--            Player One-->
+        <!--        </div>-->
+        <!--        <div class="col-sm-4 border border-secondary" id="results">-->
+        <!--            Results-->
+        <!--        </div>-->
+        <!--        <div class="col-sm-4 border border-secondary" id="playerTwo">-->
+        <!--            Player Two-->
+        <!--        </div>-->
+        <!--    </div>-->
+            
+        <!--    <div class="row">-->
+        <!--        <div class="col-xs-3">-->
+        <!--        </div>-->
+        <!--        <div class="col-xs-6">-->
+        <!--            <label class="">Chat:</label>-->
+        <!--            <p>Chattty chat chat stuff</p>-->
+        <!--        </div>-->
+        <!--        <div class="col-xs-3">-->
+        <!--        </div>-->
+        <!--    </div>-->
+            
+        <!--    <div class="row">-->
+        <!--        <div class="col-xs-3">-->
+        <!--        </div>-->
+        <!--        <div class="col-xs-6">-->
+        <!--            <form>-->
+        <!--              <div class="form-group">-->
+        <!--                <textarea class="form-control float-left" id="user-text" rows="1"></textarea>-->
+        <!--              </div>-->
+        <!--              <button type="submit float-left" class="btn btn-primary">Say it!</button>-->
+        <!--            </form>-->
+        <!--        </div>-->
+        <!--        <div class="col-xs-3">-->
+        <!--        </div>-->
+        <!--    </div>-->
+            
+            
+            
+            
+            
+        <!--</div>-->
+        <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
         <script type="text/javascript" src="assets/javascript/app.js"></script>
     </body>
     

@@ -1,0 +1,95 @@
+body{
+    background-image: url(../images/paper/image.png);
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+#mainGame{
+    max-width:645px;
+    margin:auto;
+}
+
+#playerOne{
+    position: relative;
+    float: left;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#results{
+    float: left;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+#playerTwo{
+    position: relative;
+    float: left;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+.stats{
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+    font-size: 12px;
+}
+
+#chat{
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+}
+
+#conversation{
+    overflow: scroll;
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+}
+
+form{
+    text-align: center;
+    padding: 20px;
+}
+
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#submit{
+    background-color: white;
+}
+
+#submit:hover{
+    background-color: #eee;
+}
+
+#comment:hover{
+    border-color: #eee;
+}
+
+#winner{
+    font-weight: bold;
+}
