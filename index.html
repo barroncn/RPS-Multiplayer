@@ -7,12 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <script src="https://use.fontawesome.com/8bd2ed03e6.js"></script>
         <script src="///code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="///www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     </head>
     
     <body>
         <h1>Rock, Paper, Scissors!</h1>
-        <div>
+        <h3>---<i class="fa fa-hand-rock-o" aria-hidden="true"></i>---<i class="fa fa-hand-paper-o" aria-hidden="true"></i>---<i class="fa fa-hand-scissors-o" aria-hidden="true"></i>---</h3>
+        <div id="beginGame">
              <form>
                 <label>Name:</label>
                 <input type="text" name="Name" id="playerName" class="anInput"/>
@@ -21,7 +24,6 @@
         </div>
         <div id="mainGame" class="clearfix">
             <div id="playerOne">
-                <p>Waiting for Player One</p>
             </div>
             <div id="results">
                 <br>
@@ -29,13 +31,12 @@
                 <p id="winner"></p>
             </div>
             <div id="playerTwo">
-                <p>Waiting for Player Two</p>
             </div>
         </div>
         
         <div id="chat">
             <div id="conversation">
-                <p>Chat Here:</p>
+                <p>Start the conversation...</p><hr>
             </div>
             <form>
                 <input type="text" name="comment" id="comment" class="anInput"/>
